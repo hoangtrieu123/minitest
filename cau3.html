@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Số a: <input id="numba" type="number">
+Số b: <input id="numbb" type="number"> <br> <br>
+Tích là: <h1 id="result"></h1>
+<button id="tinh" onclick="tinh()">Tính</button>
+</body>
+<script>
+    function tinh() {
+        let a = document.getElementById("numba").value
+        let b = document.getElementById("numbb").value
+        let multil = a * b
+        document.getElementById("result").innerHTML = multil
+    }
+
+</script>
+</html>

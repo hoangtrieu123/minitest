@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+a: <input id="numba" type="number"> <br> <br>
+b: <input id="numbb" type="number"> <br> <br>
+<button id="tinh" onclick="tinh()"> Tính</button>
+<br><br>
+a^2: <p id="double"></p>
+a^b: <p id="amub"></p>
+</body>
+<script>
+    function tinh() {
+        let a = document.getElementById("numba").value
+        let b = document.getElementById("numbb").value
+        let binhphuong = a * a
+        let amub = a ** b
+        document.getElementById("double").innerHTML = binhphuong
+        document.getElementById("amub").innerHTML = amub
+    }
+</script>
+</html>

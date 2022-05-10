@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Cạnh a: <input id="canha" type="number"> <br> <br>
+Cạnh b: <input id="canhb" type="number"> <br> <br>
+Cạnh c: <input id="canhc" type="number"> <br> <br>
+<button onclick="test()"> Kiểm Tra</button>
+<h1 id="result"></h1>
+</body>
+<script>
+    function test() {
+        let a = document.getElementById("canha").value
+        let b = document.getElementById("canhb").value
+        let c = document.getElementById("canhc").value
+        if (a == b == c) {
+            alert("Đây là tam giác đều")
+        }
+        if (a == b || a == c || b == c) {
+            alert("Đây là tam giác cân")
+        }
+        if ((a + b > c && a + c > b) || b + c > a){
+            alert("Đây là một tam giác")
+        }
+    }
+</script>
+</html>

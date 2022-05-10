@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+a: <input id="number" type="number"> <br> <br>
+Chu vi là: <p id="result"></p>
+Diện tích là: <p id="dientich"></p>
+Độ dài cạnh hình vuông là: <p id="doDai"></p>
+<button id="tinh" onclick="tinh()">Tính</button>
+</body>
+<script>
+    function tinh(){
+        let doDai = document.getElementById("number").value
+        let chuVi = (doDai * 4)
+        let dienTich = (doDai * doDai)
+        document.getElementById("result").innerHTML = chuVi
+        document.getElementById("dientich").innerHTML = dienTich
+        document.getElementById("doDai").innerHTML = doDai
+    }
+</script>
+</html>
